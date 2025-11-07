@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: 0 auto;
+    animation-name: pele;
+    animation-duration:  15s;
+    animation-direction: alternate-reverse;
+    position: relative;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+    margin-top: 500px;
+}
+@keyframes pele{
+    0%{
+        background-color: black;
+        top: 1300px;
+        left: 2600px;
+    }
+   
+     50%{
+        background-color: yellow;
+        top: 0;
+        left: 1300px;
+       
+     }
+     
+     100%{
+        background-color: black;
+        top: 1300px;
+        left: 0;
+     }
+}
+body{
+    animation-name: body;
+    animation-duration:  15s;
+    animation-direction: alternate-reverse;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+@keyframes body{
+    0%{
+background-color: rgb(2, 27, 56);
+    }
+    50%{
+background-color: rgb(180, 171, 121);
+    }
+    100%{
+background-color: rgb(2, 27, 56) ;
+    }
+}
